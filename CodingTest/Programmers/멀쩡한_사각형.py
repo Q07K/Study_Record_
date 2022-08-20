@@ -34,4 +34,3 @@ def solution(w,h):
                 break
         answer = w+h-gcd
     return w*h-answer
-
