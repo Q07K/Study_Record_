@@ -6,7 +6,7 @@
 # 제한 조건
 # 행렬 arr1, arr2의 행과 열의 길이는 500을 넘지 않습니다.
 
-def solution(arr1, arr2):
+def solution(arr1: list, arr2: list) -> list:
     """
     2차원 행렬 덧셈 함수
     ----------------------
@@ -14,9 +14,9 @@ def solution(arr1, arr2):
         return : type=list
                 각 2차원 행렬의 더해진 값을 반환한다.
     """
-    answer = []
+    answer: list = []
     for dim2 in zip(arr1, arr2):
-        dim1_list = []
+        dim1_list: list = []
         for dim1 in zip(dim2[0], dim2[1]):
             dim1_list.append(sum(dim1))
         answer.append(dim1_list)

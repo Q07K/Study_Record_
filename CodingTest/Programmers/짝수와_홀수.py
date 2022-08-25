@@ -7,8 +7,8 @@
 # num은 int 범위의 정수입니다.
 # 0은 짝수입니다.
 
-def solution(num):
-    answer = 'Odd'
-    if (num==0) or (num%2==0):
-        answer = 'Even'
+def solution(num: int) -> str:
+    answer: str = 'Odd'
+    if (num == 0) or (num % 2 == 0):
+        answer: str = 'Even'
     return answer

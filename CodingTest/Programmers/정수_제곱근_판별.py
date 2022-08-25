@@ -1,4 +1,4 @@
-# 문제 설명 
+# 문제 설명
 # 임의의 양의 정수 n에 대해,
 # n이 어떤 양의 정수 x의 제곱인지 아닌지 판단하려 합니다.
 # n이 양의 정수 x의 제곱이라면 x+1의 제곱을 리턴하고,
@@ -7,9 +7,9 @@
 # 제한 사항
 # n은 1이상, 50000000000000 이하인 양의 정수입니다.
 
-def solution(n):
-    result = n**.5
-    answer = -1
+def solution(n: int) -> int:
+    result: int = n**.5
+    answer: int = -1
     if result == int(result):
-        answer = (result+1)**2
+        answer: int = (result+1)**2
     return answer

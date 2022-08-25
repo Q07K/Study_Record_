@@ -7,6 +7,6 @@
 # x는 -10000000 이상, 10000000 이하인 정수입니다.
 # n은 1000 이하인 자연수입니다.
 
-def solution(x, n):
-    answer = [i*x for i in range(1, n+1)]
+def solution(x: int, n: int) -> list:
+    answer: list = [i*x for i in range(1, n+1)]
     return answer

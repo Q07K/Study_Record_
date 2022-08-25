@@ -6,11 +6,11 @@
 # 제한 조건
 # n은 길이 10,000이하인 자연수입니다.
 
-def solution(n):
-    odd = '수'
-    even = '수박'
-    if n%2==0:
-        answer = even*int(n/2)
+def solution(n: int) -> str:
+    odd: str = '수'
+    even: str = '수박'
+    if n % 2:
+        answer: str = even*int(n/2)
     else:
-        answer = f'{even*(int(n/2))}{odd}'
+        answer: str = f'{even*(int(n/2))}{odd}'
     return answer

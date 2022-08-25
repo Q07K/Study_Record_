@@ -6,6 +6,7 @@
 # 제한 조건
 # n은 1이상 8000000000 이하인 자연수입니다.
 
-def solution(n):
-    list_ = sorted(str(n), reverse=True)
-    return int(''.join(list_))
+def solution(n: int) -> int:
+    list_: list = sorted(str(n), reverse=True)
+    answer: int = int(''.join(list_))
+    return answer

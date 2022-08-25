@@ -9,9 +9,9 @@
 # arr은 길이 1 이상인 배열입니다.
 # 인덱스 i, j에 대해 i ≠ j이면 arr[i] ≠ arr[j] 입니다.
 
-def solution(arr):
+def solution(arr: list) -> list:
     arr.remove(min(arr))
-    answer = arr
-    if arr==[]:
-        answer = [-1]
+    answer: list = arr
+    if not arr:
+        answer: list = [-1]
     return answer

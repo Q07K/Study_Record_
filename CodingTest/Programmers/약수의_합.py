@@ -5,5 +5,6 @@
 # 제한 사항
 # n은 0 이상 3000이하인 정수입니다.
 
-def solution(n):
-    return sum(i for i in range(1, n+1) if n%i==0)
+def solution(n: int) -> int:
+    answer: int = sum(i for i in range(1, n+1) if n % i == 0)
+    return answer
