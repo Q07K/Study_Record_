@@ -28,15 +28,10 @@ def solution(n: int, arr1: list, arr2: list) -> list:
     answer: list = []
     for i in zip(arr1, arr2):
         # 2진수 변환 및 자릿수 맞춰주기
-        bin1 = f'{i[0]:b}'
-        bin1 = '0'*(n-len(bin1))+bin1
-        bin2 = f'{i[1]:b}'
-        bin2 = '0'*(n-len(bin2))+bin2
-
         # 0이 먼저 오는 경우 정수(int)로 변환시 0이 지워짐에 따라,
         # 변환 한 2진수 앞, 뒤에 더미 수(2) 입력
-        bin1 = int('2'+bin1+'2')
-        bin2 = int('2'+bin2+'2')
+        bin1 = int(f"{f'{i[0]:0{n}b}':2^{n+2}}")
+        bin2 = int(f"{f'{i[1]:0{n}b}':2^{n+2}}")
 
         # [1: -1] 슬라이싱을 통해 더미 수 제거
         sum_bin = f'{bin1+bin2}'[1:-1]
