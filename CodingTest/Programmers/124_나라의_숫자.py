@@ -18,10 +18,10 @@
 # 제한사항
 # n은 500,000,000이하의 자연수 입니다.
 
-def solution(n):
-    result = ''
+def solution(n: int) -> str:
+    result: str = ''
     while n:
         result = f'{n%3}' + result
-        n-=1
-        n//=3
+        n -= 1
+        n //= 3
     return result.replace('0', '4')
