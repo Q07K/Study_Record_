@@ -8,11 +8,11 @@
 # n은 2이상 1000000이하의 자연수입니다.
 
 def solution(n: int) -> int:
-    harf_n: int = int(n * .5)
-    sieve: list = [0, 0] + [1]*(n-1)
+    harf_n = int(n * .5)
+    sieve = [0, 0] + [1]*(n-1)
     for i in range(2, harf_n+1):
         if sieve[i]:
             for j in range(i+i, n+1, i):
                 sieve[j] = 0
-    answer: int = sieve.count(1)
+    answer = sieve.count(1)
     return answer

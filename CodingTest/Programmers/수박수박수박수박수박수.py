@@ -7,10 +7,10 @@
 # n은 길이 10,000이하인 자연수입니다.
 
 def solution(n: int) -> str:
-    odd: str = '수'
-    even: str = '수박'
+    odd = '수'
+    even = '수박'
     if n % 2:
-        answer: str = even*int(n/2)
+        answer = even*int(n/2)
     else:
-        answer: str = f'{even*(int(n/2))}{odd}'
+        answer = f'{even*(int(n/2))}{odd}'
     return answer

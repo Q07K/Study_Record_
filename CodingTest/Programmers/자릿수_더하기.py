@@ -7,5 +7,5 @@
 # N의 범위 : 100,000,000 이하의 자연수
 
 def solution(n: int) -> int:
-    answer: int = eval("+".join(str(n)))
+    answer = eval("+".join(str(n)))
     return answer

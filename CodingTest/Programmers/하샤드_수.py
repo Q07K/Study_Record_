@@ -9,5 +9,5 @@
 # x는 1 이상, 10000 이하인 정수입니다.
 
 def solution(x: int) -> bool:
-    answer: bool = not bool(x % sum(map(int, str(x))))
+    answer = not bool(x % sum(map(int, str(x))))
     return answer

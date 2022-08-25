@@ -7,5 +7,5 @@
 # arr의 원소는 -10,000 이상 10,000 이하인 정수입니다.
 
 def solution(arr: list) -> int:
-    answer: int = sum(arr)/len(arr)
+    answer = sum(arr)/len(arr)
     return answer

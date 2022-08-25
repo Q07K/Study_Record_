@@ -7,9 +7,9 @@
 # n은 1 이상 100,000,000 이하인 자연수입니다.
 
 def solution(n: int) -> int:
-    answer: str = ''
+    answer = ''
     while n:
         answer += f'{n%3}'
         n //= 3
-        answer: int = int(answer, 3)
+        answer = int(answer, 3)
     return answer

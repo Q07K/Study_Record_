@@ -14,10 +14,10 @@ def solution(n: int) -> int:
     n : 입력 숫자
     Return : n의 2진수와 1의 갯수가 같으며, n보다 큰 수 중 가장 작은 수
     """
-    answer: str = f'{n:b}'
-    answer_count: int = answer.count('1')
+    answer = f'{n:b}'
+    answer_count = answer.count('1')
     for i in range(n+1, 1_000_000+1):
         if answer_count == f'{i:b}'.count('1'):
-            answer: int = i
+            answer = i
             break
     return answer

@@ -14,7 +14,7 @@
 # 정답이 너무 클 수 있으니 문자열로 바꾸어 return 합니다.
 
 def solution(numbers: int) -> str:
-    numbers: list = list(map(str, numbers))
+    numbers = list(map(str, numbers))
     numbers.sort(key=lambda x: x*3, reverse=True)
-    answer: str = str(int(''.join(numbers)))
+    answer = str(int(''.join(numbers)))
     return answer

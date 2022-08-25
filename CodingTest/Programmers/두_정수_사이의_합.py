@@ -10,6 +10,6 @@
 
 
 def solution(a: int, b: int) -> int:
-    a: tuple = a, b
-    answer: int = sum(range(min(a), max(a)+1))
+    a = a, b
+    answer = sum(range(min(a), max(a)+1))
     return answer

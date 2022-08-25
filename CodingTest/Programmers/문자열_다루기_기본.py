@@ -9,7 +9,7 @@
 # s는 영문 알파벳 대소문자 또는 0부터 9까지 숫자로 이루어져 있습니다.
 
 def solution(s: str) -> bool:
-    len_s: int = len(s)
+    len_s = len(s)
     try:
         int(s)
         if (len_s == 4) or (len_s == 6):

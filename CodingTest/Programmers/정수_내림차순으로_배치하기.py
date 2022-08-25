@@ -7,6 +7,6 @@
 # n은 1이상 8000000000 이하인 자연수입니다.
 
 def solution(n: int) -> int:
-    list_: list = sorted(str(n), reverse=True)
-    answer: int = int(''.join(list_))
+    list_ = sorted(str(n), reverse=True)
+    answer = int(''.join(list_))
     return answer

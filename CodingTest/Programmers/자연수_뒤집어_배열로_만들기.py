@@ -6,5 +6,5 @@
 # n은 10,000,000,000이하인 자연수입니다.
 
 def solution(n: int) -> list:
-    answer: list = list(map(int, str(n)))[::-1]
+    answer = list(map(int, str(n)))[::-1]
     return answer

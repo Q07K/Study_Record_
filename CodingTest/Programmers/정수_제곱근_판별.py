@@ -8,8 +8,8 @@
 # n은 1이상, 50000000000000 이하인 양의 정수입니다.
 
 def solution(n: int) -> int:
-    result: int = n**.5
-    answer: int = -1
+    result = n**.5
+    answer = -1
     if result == int(result):
-        answer: int = (result+1)**2
+        answer = (result+1)**2
     return answer

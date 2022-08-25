@@ -8,6 +8,6 @@
 # phone_number는 길이 4 이상, 20이하인 문자열입니다.
 
 def solution(phone_number: str) -> str:
-    len_: int = len(phone_number)-4
-    answer: str = f'{len_*"*"}{phone_number[-4:]}'
+    len_ = len(phone_number)-4
+    answer = f'{len_*"*"}{phone_number[-4:]}'
     return answer

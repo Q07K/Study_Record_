@@ -11,7 +11,7 @@
 
 def solution(arr: list) -> list:
     arr.remove(min(arr))
-    answer: list = arr
+    answer = arr
     if not arr:
-        answer: list = [-1]
+        answer = [-1]
     return answer

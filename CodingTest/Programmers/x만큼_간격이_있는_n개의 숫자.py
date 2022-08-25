@@ -8,5 +8,5 @@
 # n은 1000 이하인 자연수입니다.
 
 def solution(x: int, n: int) -> list:
-    answer: list = [i*x for i in range(1, n+1)]
+    answer = [i*x for i in range(1, n+1)]
     return answer

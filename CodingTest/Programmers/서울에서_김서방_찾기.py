@@ -10,5 +10,5 @@
 # "Kim"은 반드시 seoul 안에 포함되어 있습니다.
 
 def solution(seoul: str) -> str:
-    answer: str = f"김서방은 {seoul.index('Kim')}에 있다"
+    answer = f"김서방은 {seoul.index('Kim')}에 있다"
     return answer

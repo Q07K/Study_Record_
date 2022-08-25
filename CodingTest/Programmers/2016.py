@@ -10,9 +10,9 @@
 # (13월 26일이나 2월 45일같은 날짜는 주어지지 않습니다)
 
 def solution(a: int, b: int) -> str:
-    w: list = ['FRI', 'SAT', 'SUN', 'MON', 'TUE', 'WED', 'THU']
-    day: list = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    w = ['FRI', 'SAT', 'SUN', 'MON', 'TUE', 'WED', 'THU']
+    day = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-    sum_day: int = sum(day[:a-1])
-    answer: str = w[(sum_day+b-1) % 7]
+    sum_day = sum(day[:a-1])
+    answer = w[(sum_day+b-1) % 7]
     return answer

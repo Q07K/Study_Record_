@@ -19,7 +19,7 @@
 # n은 500,000,000이하의 자연수 입니다.
 
 def solution(n: int) -> str:
-    result: str = ''
+    result = ''
     while n:
         result = f'{n%3}' + result
         n -= 1

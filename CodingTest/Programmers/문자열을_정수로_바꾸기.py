@@ -8,5 +8,5 @@
 # s는 "0"으로 시작하지 않습니다.
 
 def solution(s: str) -> int:
-    answer: int = int(s)
+    answer = int(s)
     return answer

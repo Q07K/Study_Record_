@@ -8,5 +8,5 @@
 # str은 길이 1 이상인 문자열입니다.
 
 def solution(s: str) -> str:
-    answer: str = ''.join(sorted(s, reverse=True))
+    answer = ''.join(sorted(s, reverse=True))
     return answer

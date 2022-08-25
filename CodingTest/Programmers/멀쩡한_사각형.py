@@ -25,13 +25,13 @@ def solution(w: int, h: int) -> int:
     최대 공배수를 이용
     """
     if w == h:
-        answer: int = w
+        answer = w
     else:
-        gcd: int = 0
+        gcd = 0
         for i in range(min(w, h), 0, -1):
             if not (w % i or h % i):
-                gcd: int = i
+                gcd = i
                 break
-        answer: int = w+h-gcd
-    answer: int = w*h-answer
+        answer = w+h-gcd
+    answer = w*h-answer
     return answer

@@ -8,6 +8,6 @@
 
 
 def solution(s: str) -> bool:
-    upper_str: str = s.upper()
-    answer: bool = upper_str.count('P') == upper_str.count('Y')
+    upper_str = s.upper()
+    answer = upper_str.count('P') == upper_str.count('Y')
     return answer

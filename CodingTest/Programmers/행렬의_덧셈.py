@@ -14,9 +14,9 @@ def solution(arr1: list, arr2: list) -> list:
         return : type=list
                 각 2차원 행렬의 더해진 값을 반환한다.
     """
-    answer: list = []
+    answer = []
     for dim2 in zip(arr1, arr2):
-        dim1_list: list = []
+        dim1_list = []
         for dim1 in zip(dim2[0], dim2[1]):
             dim1_list.append(sum(dim1))
         answer.append(dim1_list)

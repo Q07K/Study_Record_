@@ -8,7 +8,7 @@
 # 0은 짝수입니다.
 
 def solution(num: int) -> str:
-    answer: str = 'Odd'
+    answer = 'Odd'
     if (num == 0) or (num % 2 == 0):
-        answer: str = 'Even'
+        answer = 'Even'
     return answer
