@@ -9,9 +9,9 @@
 # divisor는 자연수입니다.
 # array는 길이 1 이상인 배열입니다.
 
-def solution(arr, divisor):
-    
-    answer = [i for i in arr if i%divisor==0]
+def solution(arr: list, divisor: int) -> list:
+
+    answer: list = [i for i in arr if i % divisor == 0]
     answer.sort()
     print(answer)
     if not answer:

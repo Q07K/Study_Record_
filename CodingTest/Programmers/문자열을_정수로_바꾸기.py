@@ -7,5 +7,6 @@
 # s는 부호와 숫자로만 이루어져있습니다.
 # s는 "0"으로 시작하지 않습니다.
 
-def solution(s):
-    return int(s)
+def solution(s: str) -> int:
+    answer: int = int(s)
+    return answer

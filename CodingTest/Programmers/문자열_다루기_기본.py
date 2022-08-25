@@ -8,11 +8,11 @@
 # s는 길이 1 이상, 길이 8 이하인 문자열입니다.
 # s는 영문 알파벳 대소문자 또는 0부터 9까지 숫자로 이루어져 있습니다.
 
-def solution(s):
-    len_s = len(s)
+def solution(s: str) -> bool:
+    len_s: int = len(s)
     try:
         int(s)
-        if (len_s==4) or (len_s==6):
+        if (len_s == 4) or (len_s == 6):
             return True
     except:
         return False

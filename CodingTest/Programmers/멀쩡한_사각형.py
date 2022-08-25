@@ -7,30 +7,31 @@
 # 그러므로 현재 직사각형 종이는 크기가 같은 직각삼각형 2개로 나누어진 상태입니다.
 # 새로운 종이를 구할 수 없는 상태이기 때문에,
 # 이 종이에서 원래 종이의 가로, 세로 방향과 평행하게 1cm × 1cm로 잘라,
-# 사용할 수 있는 만큼만 사용하기로 하였습니다. 
+# 사용할 수 있는 만큼만 사용하기로 하였습니다.
 # 가로의 길이 W와 세로의 길이 H가 주어질 때,
 # 사용할 수 있는 정사각형의 개수를 구하는 solution 함수를 완성해 주세요.
 
 # 제한사항
 # W, H : 1억 이하의 자연수
 
-def solution(w,h):
+def solution(w: int, h: int) -> int:
     """
     주어진 w*h 크기의 사각형의 대각선 꼭지점 2개를 잇는 방향으로 잘랐을 때,
     1 * 1로 잘라 사용할 수 있는 종이의 수를 계산하는 함수
     -----------
     w : 가로 길이
     h : 세로 길이
-    
+
     최대 공배수를 이용
     """
-    if w==h:
-        answer=w
+    if w == h:
+        answer: int = w
     else:
-        gcd = 0
-        for i in range(min(w,h),0,-1):
-            if not(w%i or h%i):
-                gcd = i
+        gcd: int = 0
+        for i in range(min(w, h), 0, -1):
+            if not (w % i or h % i):
+                gcd: int = i
                 break
-        answer = w+h-gcd
-    return w*h-answer
+        answer: int = w+h-gcd
+    answer: int = w*h-answer
+    return answer

@@ -7,9 +7,9 @@
 # 제한사항
 # 3 ≤ n ≤ 1,000,000
 
-def solution(n):
+def solution(n: int) -> int:
     for i in range(1, n+1):
-        if n%i ==1:
-            answer = i
+        if n % i == 1:
+            answer: int = i
             break
     return answer
